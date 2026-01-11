@@ -1,0 +1,385 @@
+  [
+    {
+      "title": "Exercise 1",
+      "videoId": "IsPdjNM0mwo&list"
+    },
+    {
+      "title": "Exercise 2",
+      "videoId": "97uYFfjxX8U&list"
+    },
+    {
+      "title": "Video 4",
+      "videoId": "2jGv0d2glPM&list"
+    },
+    {
+      "title": "Exercise 3",
+      "videoId": "2jGv0d2glPM&list"
+    },
+    {
+      "title": "Exercise 4",
+      "videoId": "w-1O8pVp5HI&list"
+    },
+    {
+      "title": "Exercise 5",
+      "videoId": "-y_YOWV4kPc&list"
+    },
+    {
+      "title": "Exercise 6",
+      "videoId": "IsPdjNM0mwo&list"
+    },
+    {
+      "id": 7,
+      "title": "operators",
+      "videoId": "V4Wwuu05_t4&list"
+    },
+    {
+      "id": 8,
+      "title": "exercise 1",
+      "videoId": "c3Pd1xQlfWE&list"
+    },
+    {
+      "id": 9,
+      "title": "formati specifier & escape sequence",
+      "videoId": "XETsCR2bXJI&list"
+    },
+    {
+      "id": 10,
+      "title": "if else control statement",
+      "videoId": "D0ACZ0uU_2g&list"
+    },
+    {
+      "id": 11,
+      "title": "switch case statement",
+      "videoId": "E8weUIY2-iw&list"
+    },
+    {
+      "id": 12,
+      "title": "loops in c",
+      "videoId": "A_IgufxmIHk&list"
+    },
+    {
+      "id": 13,
+      "title": "do while loop",
+      "videoId": "S2z0OTZoziI&list"
+    },
+    {
+      "id": 14,
+      "title": "while loop",
+      "videoId": "0KzWpgMLDmk&list"
+    },
+    {
+      "id": 15,
+      "title": "for loop",
+      "videoId": "T5_qpdDtTZ0&list"
+    },
+    {
+      "id": 16,
+      "title": "break & continue",
+      "videoId": "yeH9DZlpbmM&list"
+    },
+    {
+      "id": 17,
+      "title": "goto statement",
+      "videoId": "AWUxfROdzPc&list"
+    },
+    {
+      "id": 18,
+      "title": "typecasting c",
+      "videoId": "qc7FU9jWAxk&list"
+    },
+    {
+      "id": 19,
+      "title": "function",
+      "videoId": "CSJLuARmzg0&list"
+    },
+    {
+      "id": 20,
+      "title": "exercise 1:solution",
+      "videoId": "nq_999WmWTY&list"
+    },
+  {
+    "id": 21,
+    "title": "recursive function",
+    "videoId": "P5TdIWxYz4I&list"
+  },
+  {
+    "id": 22,
+    "title": "exercise 2",
+    "videoId": "mLKRZg3I66g&list"
+  },
+  {
+    "id": 23,
+    "title": "arrays",
+    "videoId": "qKFBtCPwjgI&list"
+  },
+  {
+    "id": 24,
+    "title": "exercise 2:solution",
+    "videoId": "UUkEFH20IL4&list"
+  },
+  {
+    "id": 25,
+    "title": "exercise 3",
+    "videoId": "-y_YOWV4kPc&list"
+  },
+  {
+    "id": 26,
+    "title": "pointer",
+    "videoId": "IBjGjDbwxSg&list"
+  },
+  {
+    "id": 27,
+    "title": "pointers & arrays",
+    "videoId": "RhLSYjDXB4Q&list"
+  },
+  {
+    "id": 28,
+    "title": "exercise 3:solution",
+    "videoId": "Wtoekh_12kI&list"
+  },
+  {
+    "id": 29,
+    "title": "recursion",
+    "videoId": "L39wmuaupa8&list"
+  },
+  {
+    "id": 30,
+    "title": "star patterns",
+    "videoId": "Gtlskam5ric&list"
+  },
+  {
+    "id": 31,
+    "title": "call by value & reference",
+    "videoId": "6R0jNW6j2NA&list"
+  },
+  {
+    "id": 32,
+    "title": "arrays as argument",
+    "videoId": "iaWMpHLQmDU&list"
+  },
+  {
+    "id": 33,
+    "title": "star pattern",
+    "videoId": "SFiRyw8R8mE&list"
+  },
+  {
+    "id": 34,
+    "title": "string",
+    "videoId": "fltaqGek-oA&list"
+  },
+  {
+    "id": 35,
+    "title": "string.h library",
+    "videoId": "L2aTSqTcJs8&list"
+  },
+  {
+    "id": 36,
+    "title": "array reversal",
+    "videoId": "FUcFssRCT70&lists"
+  },
+  {
+    "id": 37,
+    "title": "structures",
+    "videoId": "J464pe6ZTrE&list"
+  },
+  {
+    "id": 38,
+    "title": "typedef",
+    "videoId": "sxQ4hRHLVAc&list"
+  },
+  {
+    "id": 39,
+    "title": "union",
+    "videoId": "C3zS6WPxHPY&list"
+  },
+  {
+    "id": 40,
+    "title": "exercise 5:solution",
+    "videoId": "ijgm-QLEsHM&list"
+  },
+  {
+    "id": "41",
+    "title": "exercise 6",
+    "videoId": "K_9qlP7D8ik"
+  },
+  {
+    "id": "42",
+    "title": "variables",
+    "videoId": "u98KvPuaIus"
+  },
+  {
+    "id": "43",
+    "title": "exercise 6 :solution",
+    "videoId": "7uBBK6H3rTw"
+  },
+  {
+    "id": "44",
+    "title": "exercise 7",
+    "videoId": "RZ0trTpVVMM"
+  },
+  {
+    "id": "45",
+    "title": "memory layout",
+    "videoId": "kmV55hPsSQE"
+  },
+  {
+    "id": "46",
+    "title": "exercise 7:solution",
+    "videoId": "zx7jBJkEEt8"
+  },
+  {
+    "id": "47",
+    "title": "dynamic memory allocation",
+    "videoId": "q8j8EqCZcWM"
+  },
+  {
+    "id": "48",
+    "title": "exercise 8",
+    "videoId": "kBSJl6r70aA"
+  },
+  {
+    "id": "49",
+    "title": "storage classes",
+    "videoId": "0yNX8aYPBRg"
+  },
+  {
+    "id": "50",
+    "title": "exercise 8:solution",
+    "videoId": "9vbXVOE7ufg"
+  },
+  {
+    "id": "51",
+    "title": "exercise 9",
+    "videoId": "23FDUZy1jJw"
+  },
+  {
+    "id": "52",
+    "title": "void pointer",
+    "videoId": "HQzIJJTTCBk"
+  },
+  {
+    "id": "53",
+    "title": "null pointer",
+    "videoId": "lWX0nSBxcrc"
+  },
+  {
+    "id": "54",
+    "title": "dangling pointer",
+    "videoId": "PAgnCAMY4t8"
+  },
+  {
+    "id": "55",
+    "title": "wild pointer",
+    "videoId": "zYDHG6qt_lo"
+  },
+  {
+    "id": "56",
+    "title": "rock paper & scissors",
+    "videoId": "OFeX90DiXLI"
+  },
+  {
+    "id": "57",
+    "title": "exercise 10",
+    "videoId": "bwx4gqfeJok"
+  },
+  {
+    "id": "58",
+    "title": "intro to c preprocessor",
+    "videoId": "P9IAfh89EK8"
+  },
+  {
+    "id": "59",
+    "title": "#define & #include",
+    "videoId": "qDIpHL8Al20"
+  },
+  {
+    "id": 60,
+    "title": "predefined Macros",
+    "videoId": "iOTf_ZgrU20"
+  },
+  {
+    "id": 61,
+    "title": "matrix multiplication",
+    "videoId": "7QX_vwJMsL0"
+  },
+  {
+    "id": 62,
+    "title": "file I/O",
+    "videoId": "C286MZpbNl8"
+  },
+  {
+    "id": 63,
+    "title": "exercise 11",
+    "videoId": "kFTwAWiQUIg"
+  },
+  {
+    "id": 64,
+    "title": "file I/O functions",
+    "videoId": "qbeKkYSMe-Y"
+  },
+  {
+    "id": 65,
+    "title": "exercise 11: solution",
+    "videoId": "WUG2rN0cG9c"
+  },
+  {
+    "id": 66,
+    "title": "exercise 12",
+    "videoId": "dJA5qWhCXvE"
+  },
+  {
+    "id": 67,
+    "title": "file I/O",
+    "videoId": "qg69AXmHhx8"
+  },
+  {
+    "id": 68,
+    "title": "command line argument",
+    "videoId": "CMkymwLBSyg"
+  },
+  {
+    "id": 69,
+    "title": "exercise 12",
+    "videoId": "9HcUfc6_0Oc"
+  },
+  {
+    "id": 70,
+    "title": "exercise 13",
+    "videoId": "CqRCD3Vv6xM"
+  },
+  {
+    "id": 71,
+    "title": "exercise 13: solution",
+    "videoId": "7G0ceg3ElqY"
+  },
+  {
+    "id": 72,
+    "title": "function pointers",
+    "videoId": "TjgU8oTd61E"
+  },
+  {
+    "id": 73,
+    "title": "callback function",
+    "videoId": "ixsfbrvoFwA"
+  },
+  {
+    "id": 74,
+    "title": "function pointer",
+    "videoId": "QPACZmKLx_c"
+  },
+  {
+    "id": 75,
+    "title": "memory leak",
+    "videoId": "5tFhNUJSFrc"
+  },
+  {
+    "id": 76,
+    "title": "exercise 14: solution",
+    "videoId": "VxBsanSLMSA"
+  }
+
+
+
+
+
+  ]

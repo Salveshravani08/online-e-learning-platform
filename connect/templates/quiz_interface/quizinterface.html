@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+    <link rel="stylesheet" type="text/css" href="style_Q_I.css">
+	<link rel="stylesheet" href="{{ url_for('static', filename='quiz_interface_styling/style_Q_I.css') }}">
+</head>
+<body>
+<section class="container" id="quiz">
+		<h1 class="heading">pick a quiz topic</h1>
+		<h3 class="title">test your knowledge</h3>
+			<div class="quiz-box-container">
+			     <div class="box">
+					<i class="devicon-html5-plain" > </i>
+					<h3>html5</h3>
+					<p>
+					<!-- <li> <a href="{{ url_for('quizinterface')}}">quiz</a></li>
+                     <a href="../htmlquiz/htmlquiz.html">HTML Quiz</a> -->
+					 <a href="{{ url_for('htmlquiz')}}">HTML Quiz</a>
+					</p>
+				 </div>
+				 <div class="box">
+					<i class="devicon-css3-plain"> </i>
+					<h3>css 3</h3>
+					<p>
+						<a href="{{ url_for('cssquiz')}}">CSS QUIZ</a>
+					</p>
+				 </div>       
+				 <div class="box">
+					<i class="devicon-javascript-plain"> </i>
+					<h3>java script</h3>
+					<p>
+						<a href="{{ url_for('jsquiz')}}" >JAVASCRIPT QUIZ</a>
+					</p>
+				 </div>
+				 <div class="box">
+					<i class="devicon-python-plain"> </i>
+					<h3>Python</h3>
+					<p>
+					<a href="{{ url_for('pythonquiz')}}">PYTHON QUIZ </a> 
+					</p>
+				 </div>
+				 <div class="box">
+					<i class="devicon-c-plain"> </i>
+					<h3>C language</h3>
+					<p> 
+						<a href="{{ url_for('cquiz')}}">C QUIZ </a>
+					</p>
+				 </div>
+				 <div class="box">
+					<i class="devicon-cplusplus-plain"> </i>
+					<h3>C++ language</h3>
+					<p>
+						<a href="{{ url_for('cppquiz')}}">C++ QUIZ</a>
+					</p>
+				 </div>
+			</div>
+	</section>
+
+</body>
+</html>

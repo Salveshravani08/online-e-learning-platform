@@ -1,0 +1,51 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='dashboard_style_script/course_style.css') }}">
+        <script src="{{ url_for('static', filename='dashboard_style_script/admin_panel_script.js') }}"></script>
+</head>
+<body>
+
+    <!-- Sidebar    admin_style/dashboard_style_script  -->
+    <div class="sidebar" id="sidebar">
+        <div class="adminimage"></div>
+        <center> <h2>Admin</h2> </center>
+        <ul>
+            <li><a href="{{ url_for('admin_panel') }}">Dashboard</a></li>
+            <li><a href="{{ url_for('student') }}">Students</a></li>
+            <li><a href="{{ url_for('course') }}">Courses</a></li>
+        </ul>
+    </div>
+
+    <!-- Toggle Sidebar Button -->
+    <button class="menu-toggle" onclick="toggleSidebar()">☰</button>
+
+    <!-- Main Content -->
+    <div class="main-content">
+        <center><h1>Course</h1></center>
+        
+        <div class="stats">
+            <div class="card">
+                <h3>Total Courses</h3>
+                <div class="total-course"></div>
+                <p id="totalUsers">Loading...</p>
+            </div>
+            <div class="card">
+                <h3>Add Courses</h3>
+                <div class="add-course"></div>
+                <p id="totalCourses">Loading...</p>
+            </div>
+            <div class="card">
+                <h3>view courses </h3>
+                <div class="view-course"></div>
+                <p id="totalQuizzes">Loading...</p>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

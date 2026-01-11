@@ -1,0 +1,42 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introduction to Web Development</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Introduction to Web Development</h1>
+        <p>Learn about frontend, backend, and full stack development.</p>
+    </header>
+
+    <section class="content">
+        <div class="card">
+            <h2>Frontend Development</h2>
+            <p>Frontend is the part of a website that users interact with directly.</p>
+            <button onclick="showMore('frontend')">Learn More</button>
+            <p id="frontend-info" class="hidden">It includes HTML, CSS, and JavaScript for creating user-friendly interfaces.</p>
+        </div>
+
+        <div class="card">
+            <h2>Backend Development</h2>
+            <p>Backend is responsible for handling database and server-side logic.</p>
+            <button onclick="showMore('backend')">Learn More</button>
+            <p id="backend-info" class="hidden">It includes languages like Python, PHP, and Node.js for processing requests.</p>
+        </div>
+
+        <div class="card">
+            <h2>Full Stack Development</h2>
+            <p>Full Stack means handling both frontend and backend.</p>
+            <button onclick="showMore('fullstack')">Learn More</button>
+            <p id="fullstack-info" class="hidden">A full stack developer can build complete web applications.</p>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>

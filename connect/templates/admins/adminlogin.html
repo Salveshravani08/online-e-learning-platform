@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>admin login</title>
+	<!-- Link CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='admin_style/adminlogin_style.css') }}">
+</head>
+<body>
+	<div class="container">
+		<div class="admin_card">
+			{% with messages = get_flashed_messages(with_categories=true) %}
+    {% if messages %}
+        {% for category, message in messages %}
+            <div class="flash-message alert-{{ category }}">
+                <span class="close-btn" onclick="this.parentElement.style.display='none';">&times;</span>
+                {{ message }}
+            </div>
+        {% endfor %}
+    	{% endif %}
+		{% endwith %}
+				<form action="/adminlogin" method="Post">
+				<h1>admin login</h1>
+				<h2> please enter your login and password !</h2>
+				<div class="text-name">
+				<input  type="text" placeholder="admin name" required name="admin_name"> </input>
+			    </div>
+			    <div class="text-name">
+				<input type="password" placeholder="password" required name="password"> </input>
+			    </div>
+			    <div class="btn">
+				<input type="submit" value="login">
+			    </div>
+			</form>
+		</div>
+	</div>
+</body>
+<script>
+	let category = document.getElementsByClassName("category");
+	console.log("category access");
+	if(category.length > 0) // check if element exists
+{ 
+  category[0].style.display = "block" ;
+}
+</script>
+</html>

@@ -1,0 +1,157 @@
+
+
+/*  --------------------------------   styling of quiz interface---------------------------- */
+
+:root{
+		--pink:#ff046f;
+		--violet:#c63bfa;
+
+	}
+   *{
+		font-family: "Roboto", sans-serif;
+		text-transform:capitalize ;
+		text-decoration:none;
+		outline:none;
+		margin:0;
+		padding:0;
+		box-sizing:border-box;
+	}
+	*::selection{
+		background:var(--pink);
+		color:#fff;
+	}
+
+	html{
+		font-size:62.5%;
+		overflow-x:hidden;
+	}
+
+	body{
+		background:#fff;
+		overflow-y:scroll;
+		height:100vh;
+		width:100%;
+	}
+
+	section{
+		position: relative;
+       height:100vh;
+       width:100%;
+       background-color:#fff;
+       text-align: center;
+       align-items: center;
+	}
+	section .heading{
+		height:10vh;
+		width:100vw;
+		font-size:40px;
+		font-weight: 700;
+		text-align: center;
+		color: var(--violet);
+	}
+	section .title{
+		height:5vh;
+		width:100vw;
+		font-size:20px;
+		font-weight: 700;
+		text-align: center;
+		color: var(--pink);
+	}
+	section .quiz-box-container{
+		width:80%;
+     	display:flex;
+     	justify-content: center;
+        margin:0rem auto;
+     	background-color:;
+     	flex-wrap: wrap;
+	}
+	.quiz-box-container .box{
+		height:200px;
+     	width:220px;
+     	background-color:;
+     	margin:4rem 5rem;
+     	box-shadow: 0.5rem 0.8rem 0.4rem rgba(211, 95, 217,1);
+     	border-radius:1rem;
+     	overflow-y:hidden;
+     	padding:3rem 0rem;
+     	transition: 1s;
+	}
+	.quiz-box-container .box i{
+     	color:var(--pink);
+     	font-size:7rem;
+     	transition: 1s;
+     }
+     .quiz-box-container .box h3{
+     	color: var(--violet);
+     	font-size:2rem;
+     }
+     .quiz-box-container .box p{
+     	padding:1rem;
+     	font-size:10px;
+     }
+       .quiz-box-container .box:hover{
+        height:210px;
+     	width:230px;
+     	background-color:#ebe6f0;
+     	margin:4rem 5rem;
+     	box-shadow: 0.5rem 0.8rem 0.4rem var(--violet);
+     	border-radius:0rem;
+     	overflow-y:hidden;
+     	padding:3rem 0rem;
+       }
+       .quiz-box-container .box i:hover{
+     	color:var(--violet);
+     	font-size:8rem;
+     }
+     
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="style.css">  static\quiz_test_style_script\css_quiz_style_script -->
+     <link rel="stylesheet" href="{{ url_for('static', filename='quiz_test_style_script/css_quiz_style_script/style.css') }}">
+</head>
+<body>
+    <main class="main">
+<!----------------------------------------------------------------------container ----------------------------------------->
+     <div class="container"> 
+        <!-- -----------------quiz section-------------------- -->
+         <section class="quiz_section">
+             <div class="quiz-box"><h1>codehal Quiz </h1>
+                     <div  class="quiz_header">
+                        <span>Quiz website tutorial</span>
+                        <span class="header-score">score: 0/5 </span>
+                     </div><h2 class="question-text">1 What does HTML stand for ? </h2>
+                     <div class="optionlist">
+                              <div class="option">
+                              <span>a. hyper text multi language </span> 
+                              </div>
+
+                              <div class="option">
+                              <span>b. hyper text multiple language</span> 
+                              </div>
+
+                              <div class="option">
+                              <span>c. hyper text markup language </span> 
+                              </div>
+
+                              <div class="option">
+                              <span>d. home text multi language </span> 
+                              </div>
+                     </div>
+                     <div class="quiz_footer">
+                             <span class="quesion-total">1 of 5 Question </span> 
+                             <button class="next-btn">Next</button>
+                     </div>
+                 </div> 
+
+                      <!-----result box---------->
+
+                 <div class="result-box"><h2> Quiz Result !</h2>
+                     <div class="percentage-container">
+                             <div class="circular-progress">
+                                <span class="progress-values">0%</span>
+                             </div>
+                             <span class="score-text">Your Score &nbsp; 0 out of&nbsp;  5</span>       
+                     </div>
+                     <div class="buttons">
+                        <button class="tryagain">Try Again</button>
+                        <button class="go-home"> Go To Home </button>
+                     </div>
+                 </div>
+             </section>
+             <!--------------quiz secion close-------------------------------  -->
+                        <!---home section ------>
+             
+             <section class="home" id="home">
+                <section class="home-content">
+                <h1 class="qw">Knowledge challenge Quiz</h1>
+                <p class="para"> Test your knowledge with our exciting quiz ! Are you ready to challenge yourself ?</p>
+                <button class="start">Start</button>
+                </section>
+             </section>
+    </div>        
+         <!-------------------------------------------- container close ------------------------------------------->
+</main>
+    <!-- ----------------------------main close--------------------------------------------------------------------->
+
+<!----------------------------------------------------------------pop up-------------------------------------------->
+
+             <div class="pop_up">
+                 <h1 class="q_guide">Quiz guidelines</h1>
+                
+                  <ol>
+                    <li><input type="checkbox" checked> There are 5  multiple questions</li>
+                    <li> <input type="checkbox" checked> Each questions is worth 20 points </li>
+                    <li> <input type="checkbox" checked> You cannot go back to previous question</li>
+                    <li> <input type="checkbox" checked> Select the best answer from the given options </li>
+                   </ol>
+               
+                <div class="btn_grp">
+                <button class="exit exitbtn" id="exit">Exit</button> 
+                <button class="continue">Continue </button>
+                </div>
+             </div>       
+</body>
+<script src="static/quiz_test_style_script/css_quiz_style_script/question.js"> </script>
+<!-- <script src="script.js"></script> -->
+<script src="static/quiz_test_style_script/css_quiz_style_script/script.js"></script>  
+<!-- quiz_test_style_script/css_quiz_style_script -->
+</html>

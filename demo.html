@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Login and Signup Page</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+  <style>
+    * {
+      margin: 10px;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Roboto", sans-serif;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background: url("login.png");
+      background-size: cover;
+      border-top: 0.6rem solid var(--pink);
+    }
+
+    .container {
+      width: 380px;
+      padding: 20px;
+      background-color: aliceblue;
+      box-shadow: 0 0 10px rgba(16, 11, 11, 0.5);
+      text-align: center;
+    }
+
+    h1 {
+      margin-bottom: 15px;
+      color: #b415ee;
+    }
+
+    input {
+      width: 100%;
+      padding: 10px;
+      margin: 30px 0;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+      max-width: 300px;
+    }
+
+    button {
+      width: 100%;
+      padding: 10px;
+      background-color: #f2086e;
+      border: none;
+      color: white;
+      font-size: 16px;
+      cursor: pointer;
+      margin-top: 10px;
+      border-radius: 4px;
+    }
+
+    button:hover {
+      background-color: violet;
+    }
+
+    a {
+      color: #007bff;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .icon-input {
+      display: flex;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+
+    .icon-input input {
+      flex: 1;
+      padding-left: 10px;
+    }
+
+    .icon-input i {
+      padding: 10px;
+      background-color: #ddd;
+      border-radius: 4px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- Login Form -->
+    <div class="form-box" id="login-form">
+      <h1 class="form-title">Login</h1>
+      <form method="POST" action="/login">
+        <div class="icon-input">
+          <label>Email:</label>
+          <input type="email" name="login_email" required />
+        </div>
+        <div class="icon-input">
+          <i class="fas fa-lock"></i>
+          <input type="password" name="login_password" placeholder="Enter Password" required />
+        </div>
+        <button type="submit">Submit</button>
+        <p><a href="#" id="forget-password-link">Forgot Password?</a></p>
+        <p>Don't have an account? <a href="#" id="show-signup">Sign Up</a></p>
+      </form>
+    </div>
+
+    <!-- Signup Form -->
+    <div class="signup-form" id="signup-form" style="display: none;">
+      <h1 class="form-title">Sign-up</h1>
+      <form method="POST" action="/signup">
+        <div class="icon-input">
+          <i class="fas fa-user"></i>
+          <input type="text" name="name" placeholder="Full Name" required />
+        </div>
+        <div class="icon-input">
+          <i class="fas fa-envelope"></i>
+          <input type="email" name="email" placeholder="Enter Email" required />
+        </div>
+        <div class="icon-input">
+          <i class="fas fa-lock"></i>
+          <input type="password" name="password" placeholder="Password" required />
+        </div>
+        <div class="icon-input">
+          <i class="fas fa-lock"></i>
+          <input type="password" name="confirmpassword" placeholder="Confirm Password" required />
+        </div>
+        <button type="submit">Sign Up</button>
+        <p>Already have an account? <a href="#" id="show-login">Login</a></p>
+      </form>
+    </div>
+
+    <!-- Forgot Password Form -->
+    <div class="forget-password-form" id="forget-password-form" style="display: none;">
+      <h1 class="form-title">Forgot Password</h1>
+      <form method="POST" action="/forgot">
+        <div class="icon-input">
+          <i class="fas fa-envelope"></i>
+          <input type="email" name="email_in_forgotpassword" placeholder="Email" required />
+        </div>
+        <button type="submit">Submit</button>
+        <p>Remember your password? <a href="#" id="back-to-login">Login</a></p>
+      </form>
+    </div>
+
+    <!-- OTP Verification Form -->
+    <div class="otp-verification-form" style="display: none;">
+      <h1 class="form-title">OTP Verification</h1>
+      <form method="POST" action="/verify">
+        <div class="icon-input">
+          <input type="text" placeholder="Enter your OTP" name="otp" required />
+        </div>
+        <button type="submit">Verify OTP</button>
+      </form>
+    </div>
+
+    <!-- Reset Password Form -->
+    <div class="reset-password" style="display: none;">
+      <h1 class="form-title">Reset Password</h1>
+      <form method="POST" action="/reset">
+        <div class="icon-input">
+          <input type="password" placeholder="Enter your new password" name="new_password" required />
+        </div>
+        <div class="icon-input">
+          <input type="password" placeholder="Confirm password" name="confirm_password" required />
+        </div>
+        <button type="submit">Submit</button>
+        <a href="#" id="back-to-login">Login</a>
+      </form>
+    </div>
+  </div>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      const loginForm = document.getElementById("login-form");
+      const signupForm = document.getElementById("signup-form");
+      const forgetPasswordForm = document.getElementById("forget-password-form");
+      const otpVerificationForm = document.querySelector(".otp-verification-form");
+      const resetPasswordForm = document.querySelector(".reset-password");
+
+      const showSignup = document.getElementById("show-signup");
+      const showLogin = document.getElementById("show-login");
+      const forgetPasswordLink = document.getElementById("forget-password-link");
+      const backToLoginLinks = document.querySelectorAll("#back-to-login");
+
+      // Show Signup Form
+      showSignup.addEventListener("click", function(e) {
+        e.preventDefault();
+        loginForm.style.display = "none";
+        signupForm.style.display = "block";
+      });
+
+      // Show Login Form
+      showLogin.addEventListener("click", function(e) {
+        e.preventDefault();
+        loginForm.style.display = "block";
+        signupForm.style.display = "none";
+      });
+
+      // Show Forgot Password Form
+      forgetPasswordLink.addEventListener("click", function(e) {
+        e.preventDefault();
+        loginForm.style.display = "none";
+        forgetPasswordForm.style.display = "block";
+      });
+
+      // Back to Login
+      backToLoginLinks.forEach(link => {
+        link.addEventListener("click", function(e) {
+          e.preventDefault();
+          loginForm.style.display = "block";
+          forgetPasswordForm.style.display = "none";
+          otpVerificationForm.style.display = "none";
+          resetPasswordForm.style.display = "none";
+        });
+      });
+
+      // Show OTP Verification Form
+      forgetPasswordForm.addEventListener("submit", function(e) {
+        e.preventDefault();
+        forgetPasswordForm.style.display = "none";
+        otpVerificationForm.style.display = "block";
+      });
+
+      // Show Reset Password Form
+      otpVerificationForm.addEventListener("submit", function(e) {
+        e.preventDefault();
+        otpVerificationForm.style.display = "none";
+        resetPasswordForm.style.display = "block";
+      });
+    });
+  </script>
+</body>
+</html>

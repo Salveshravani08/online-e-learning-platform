@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+
+    <!-- Add icon library -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="login_style.css">
+</head>
+<body>
+    <div class="login-container">
+        <h2>Login</h2>
+        <form >
+            <div class="input-group">
+                <label for="email">Email</label>
+                <div class="input-icon">
+                    <input type="email" id="email" name="email" required>
+                    <i class="fa fa-envelope email"></i> <!-- Font Awesome Icon -->
+                </div>
+            </div>
+            <div class="input-group">
+                <label for="password">Password</label>
+                <div class="input-icon">
+                    <input type="password" id="password" name="password" required>
+                    <i class="fa fa-lock"></i>
+                </div>
+            </div>
+            <a href="forgotpswrd.html" class="forgot-password">Forgot Password?</a>
+            <button type="submit" class="btn">Login</button>
+        </form>
+        <p class="register-text">Don't have an account? <a href="signup.html">Create Account</a></p>
+    </div>
+</body>
+</html>

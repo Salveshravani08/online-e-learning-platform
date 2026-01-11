@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Video Page</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+        }
+
+        body{
+            margin-top:0px;
+            display: flex;
+            flex-wrap: wrap;
+            width:100%;
+
+        }
+        #videoFrame{
+        position:relative;
+        margin:0px auto;
+        height:550px;
+        width:100%;
+
+     }
+     .button{
+        margin:50px auto;
+        font-size: 25px;
+     }
+
+     @media (max-width:700px)
+     {
+
+        body{
+            flex-direction: column;
+        }
+         #videoFrame{
+            align-content: center;
+            text-align: center;
+         margin:10px auto;
+         height:350px;
+         width:400px;
+         }
+         .button{
+            /*margin: 10px auto;
+        font-size: 1rem;*/
+         }
+
+
+
+     }
+
+    </style>
+</head>
+<body>
+    <iframe id="videoFrame" width="560" height="315" 
+        title="YouTube video player" frameborder="0" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+        allowfullscreen>
+    </iframe>
+    <button  class="button" onclick="goBack()">🔙 Go Back</button>
+
+    <script>
+        // Function to get video ID from URL
+        function getVideoId() {
+            let params = new URLSearchParams(window.location.search);
+            return params.get("videoId"); // Get video ID from URL
+        }
+
+        // ✅ *Page Load Hone Par Call Karna* ✅
+        window.onload = function() {
+            let videoId = getVideoId();
+            if (videoId) {
+                document.getElementById("videoFrame").src = "https://www.youtube.com/embed/" + videoId + "?autoplay=1&controls=1";
+            } else {
+                alert("Video not found!");
+            }
+        };
+
+        // Go Back Function
+        function goBack() {
+            window.history.back(); // Last page pe wapas jane ke liye
+        }
+    </script>
+
+</body>
+</html>

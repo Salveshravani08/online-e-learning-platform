@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root{
+    --pink:#ff046f;
+    --violet:#c63BFa;
+}
+
+:root {
+    --light-pink: #ffdee9;
+    --light-violet: #c3bef0;
+    --soft-white: #fdfdfd;
+    --soft-gray: #d3d3d3;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box; // no extra spaces takes 
+     font-family: 'Poppins', sans-serif;
+}
+body{
+
+}
+header{
+    width:100vw;
+    height:80px;
+    text-align: center;
+    font-size:40px;
+    padding-top:15px;
+     background-color: #ed9ef0; 
+     font-family: 'Lobster',cursive;
+     text-shadow: 2px 2px 5px rgb(0, 0, 0 , 0.3);
+     background:linear-gradient(to right, #ff79c6,#bd93f9);
+     border-bottom: 5px solid var(--violet);
+
+
+}
+header span{
+    font-size:3rem;
+}
+
+.container{
+    width:100%;
+    display: flex;
+    margin-top:20px;
+    flex-wrap: wrap;
+    flex-direction: column;
+    background-color:#fff; 
+    align-items: center;
+}
+
+.html_c{
+height:50px;
+width:1100px;
+border:1px solid var(--pink);
+margin:10px;
+border-radius: 5px;
+align-items: center;
+display: flex;
+background: linear-gradient(to right, var(--light-pink), var(--light-violet));
+box-shadow: 2px 2px 8px rgba(0, 0, 0 , 0.1);
+transition: transform 0.2s;
+}
+.html_c:hover{
+    transform: scale(1.05);
+    box-shadow: 2px 2px 12px rgb(0, 0, 0 , 0.2);
+}
+ 
+.html_c .id{
+background-color: var(--pink);
+border:1px solid red;
+color:white;
+height: 49px;
+width: 75px;
+border-radius:5px;
+text-align: center;
+padding-top: 8px;
+align-items: center;
+font-size:1.5rem;
+}
+
+.container .html_c span> a{
+ align-items: left;
+ padding-left:30px;   
+ padding-top:20px;
+ font-size:1.5rem;
+ text-decoration: none;
+ color:black;
+ font-family: sans-serif;
+ text-transform: capitalize;
+}
+.html_c span> a:hover{
+
+}
+/*-----------------------------video part-------------------------------*/
+
+#videofdrame{
+    width:80%;
+    height: 350px;
+    border:none;
+}
+@media(max-width:978px)
+{
+    header{
+        width:100%;
+    }
+    .html_c
+    {
+        width:90%;
+    }
+}
+
+@media (max-width:600px){
+    header{
+        width: 100%;
+    }
+    .html_c{
+        width:90%;
+    }
+    .html_c span> a
+    {
+        font-size:20px;
+        text-align: center;
+        align-items: center;
+        padding-left:25px;
+    }
+
+}
+
+

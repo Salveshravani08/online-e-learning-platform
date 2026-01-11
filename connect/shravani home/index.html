@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Complete Responsive Online Education Platform</title>
+
+    <!-- Latest Font Awesome version 6 CDN link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <!-- Custom CSS file -->
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        /* Define light violet color */
+        :root {
+            --light-violet: #d8a7f2;  /* Light violet color */
+            scroll-behavior: smooth;
+        }
+
+        /* Add class for changing background color */
+        .container-clicked {
+            background-color: var(--light-violet) !important;
+            transition: background-color 0.3s ease;  /* Smooth transition */
+        }
+
+        /* Other styles, for example, .box */
+        .box {
+            height: 20rem;
+            width: 25rem;
+            background: #fff;
+            text-align: center;
+            border-radius: 1rem;
+            box-shadow: 3px 10px 15px rgba(0, 0, 0, 0.5);
+            margin: 3rem;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header Section Starts -->
+    <header>
+        <a href="#" class="logo"><i class="fas fa-graduation-cap" style="color:var(--pink)"></i>ShraMan</a>
+
+        <!-- Navbar -->
+        <nav class="navbar">
+            <ul>
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#Course">Course</a></li>
+                <li><a href="#review">Review</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="login.html">login</a></li>
+
+
+
+            </ul>
+        </nav>
+
+        <!-- Hamburger Icon -->
+        <div class="fas fa-bars"></div>
+    </header>
+    <!-- Header Section Ends -->
+
+    <!-- Marquee Section (placed after the header section) -->
+    <marquee width="100%" behavior="left-right" style="color: white; font-size: 1.5rem;">free online Courses available !!</marquee>
+
+    <!-- Home section start -->
+    <section class="home" id="home">
+        <div class="content">
+            <h1>Welcome to shraman academy</h1>
+            <p>Master new skills with expert instructors , flexible schedules , and tailored content. 
+                Achieve your goal from the comfort of your home.</p>
+            <button>Discover More</button>
+        </div>
+
+        <!-- Box container -->
+        <div class="box-container">
+            <div class="box" >
+                <i class="fas fa-graduation-cap"></i>
+                <h3>Trending Courses</h3>
+                <p>Discover popular cousers like web Development , Digital Marketing , and Ul/UX Design. Learn what's in demand ans stay ahead of the curve.</p>
+         </div>
+            <div class="box" >
+                <i class="fas fa-fire"></i>
+                <h3>Free Trial</h3>
+                <p>Start learning for free! Get access to 5 premium cousers and experience the platform before committing to a plan .</p>
+            </div>
+            <div class="box" >
+                <i class="fas fa-award"></i>
+                <h3>Certifications</h3>
+                <p>Boost your resume with globally recognized Certifications. Showcase your expertise and land your dream job.</p>
+            </div>
+        </div>
+    </section>
+    <!-- Home section end -->
+
+    <!-- About section start -->
+    <section class="about" id="about" style="background-color:white;">
+        <h1 class="heading">About Us</h1>
+        <h3 class="title">Start your journey with us</h3>
+        <div class="row">
+            <!-- Content -->
+            <div class="content">
+                <h3>Start your journey to a better life with our practical Courses</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Consectetur architecto ut aliquid eos, dolor debitis blanditiis atque perspiciatis vitae facere modi
+                    ducimus eaque doloribus incidunt expedita, dignissimos corrupti, ad temporibus.</p>
+                <a href="#"><button>Learn More</button></a>
+            </div>
+            <!-- Image -->
+            <div class="image">
+                <img src="about.jpeg" alt="About Us Image">
+            </div>
+        </div>
+    </section>
+    <!-- About section end -->
+
+    
+  <!--course section start-->
+  <section id="Course" class="Course" style="background-color: white;">
+    
+    <h1 class="heading">Our popular Courses</h1>
+    <h3 class="title">Learn from Basic to Advance</h3>
+   
+
+    <div class="course-box-container">
+        <!-- Box 1 -->
+        <div class="box">
+            <i class="fab fa-html5"></i>
+            <h1>HTML5</h1>
+            <p>leran html from basic to advance ler</p>
+        </div>
+        
+        <!-- Box 2 -->
+        <div class="box">
+            <i class="fab fa-css3-alt"></i>
+            <h1>CSS3</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec euismod.</p>
+        </div>
+        
+        <!-- Box 3 -->
+        <div class="box">
+            <i class="fab fa-js-square"></i>
+            <h1>JavaScript</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec euismod.</p>
+        </div>
+        
+        <!-- Box 4 -->
+        <div class="box">
+            <i class="fas fa-code"></i>
+            <h1>PYTHON</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec euismod.</p>
+        </div>
+        
+        <!-- Box 5 -->
+        <div class="box">
+            <i class="fas fa-bullhorn"></i>
+            <h1>Digital Marketing</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec euismod.</p>
+        </div>
+
+        <!-- Box 6 -->
+        <div class="box">
+            <i class="fas fa-paint-brush"></i>
+            <h1>Graphic Design</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec euismod.</p>
+        </div>
+    </div>
+</section>
+<section id="review" class="review"  style="background-color: #fff;">
+    <h1 class="heading">Student Review</h1>
+    <h3 class="title">What Students Say About Us</h3>
+    <div class="review-container">
+        <div class="box">
+            <img src="review.png" alt="">
+            <h3>John Doe</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium optio magnam ipsa illum?</p>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+            </div>
+        </div>
+        <div class="box">
+            <img src="review.png" alt="">
+            <h3>Jane Smith</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium optio magnam ipsa illum?</p>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+            </div>
+           </div>
+
+    
+        <div class="box">
+           <img src="review.png" alt="">
+            <h3>name</h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusantium optio magnam ipsa illum? 
+             </p>
+        <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+          </div>
+        </div>
+    
+        <div class="box">
+            <img src="review.png" alt="">
+            <h3>name</h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusantium optio magnam ipsa illum? 
+            </p>
+        <div class="stars">
+           <i class="fas fa-star"></i>
+           <i class="fas fa-star"></i>
+           <i class="fas fa-star"></i>
+           <i class="fas fa-star"></i>
+           <i class="fas fa-star-half-alt"></i>
+        </div>
+        </div>
+
+    
+        <div class="box">
+           <img src="review.png" alt="">
+            <h3>name</h3>
+           <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusantium optio magnam ipsa illum? 
+           </p>
+        <div class="stars" >
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+        </div>
+        </div>
+    
+        <div class="box">
+           <img src="review.png" alt="">
+           <h3>name</h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusantium optio magnam ipsa illum? Similiqu 
+            
+           </p>
+        <div class="stars" >
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+        
+         </div>
+      </div>
+    
+    </div>
+
+</section>
+<!--contact section start-->
+<section id="contact" class="contact" >
+      
+    <h1 class="heading">contact us</h1>
+	<h3 class="title">we love conversation lets talk </h3>
+      
+    <div class="row">
+      <div class="image">
+        <img src="contact.png" alt="phone image is here">
+      </div>
+
+    <div class="contact-form">
+       
+        
+        <form id="contactform">
+        <div class="icon-input">
+            <i class="fas fa-user"></i>
+            <input type="text" id="name" placeholder="Full Name" required>
+        </div>
+
+        <!-- Email -->
+        <div class="icon-input">
+            <i class="fas fa-envelope"></i>
+            <input type="email" id="Email" placeholder="Enter Email" required>
+        </div>
+
+        <!-- Password -->
+        <div class="icon-input">
+            <i class="fas fa-phone"></i>
+            <input type="tel" id="phone" placeholder="Phone Number" required>
+        </div>
+
+        <div class="icon-input">
+            <i class="fas fa-comment"></i>
+            <input type="meaasage" id="fa-meassage"  placeholder="Meassage" required >
+        </div>
+                <input type="submit" value="Send Message">
+            </form>
+        </div>
+    </div>
+</section>
+
+<footer>
+<div class="icon"style="background-color: white;">
+    <a href="#" class="fab fa-facebook-f"></a>
+    <a href="#" class="fab fa-twitter"></a>
+    <a href="#" class="fab fa-instgram"></a>
+    <a href="#" class="fab fa-github"></a>
+    <a href="#" class="fab fa-pinterest"></a>
+
+ </div>
+
+<div class="credit" style="background-color: white;">
+    <h3>Created by <span>Miss manisha</span> and <span>Shravani</span> all rights reserved</h3>
+</div>
+
+</footer>
+
+
+
+
+
+<section id="login.html" class="login.html">
+    <src=login.html></src>
+</section>
+
+
+
+
+
+
+
+    <!-- jQuery CDN link -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <!-- Custom jQuery file -->
+    <script src="main.js"></script>
+
+    
+</body>
+
+</html>
